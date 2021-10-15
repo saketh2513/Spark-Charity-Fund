@@ -7,7 +7,7 @@
 }
 body{
     font-family:'Poppins',sans-serif ;
-    background-image:  url(images/contactpic.jpg) ;
+    background-image:  url(contactpic.jpg) ;
     background-size: cover;
     background-attachment: fixed;
 }
