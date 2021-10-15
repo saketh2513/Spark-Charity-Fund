@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sparks Charity Fund|Home</title>
+        <!-- for inserting logo at title tab -->
+        <link rel="shortcut icon" href="images/logo.png" > 
+        <link rel="stylesheet"  href="style_donate.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $('#bars').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+        <body>
+            <section>
+                <header>
+                    <!--  <div class="logo">
+                         <img src="images/log_head.png" width="120" height="90"  >
+                     </div> -->
+                     
+                     <a class="logotext">Sparks Charity Fund</a>
+                     <nav>
+                         <ul>
+                             <li><a href="index.html" >Home</a></li>
+                             <li><a href="donate.html" class="active">Donate</a></li>
+                             <li><a href="about.html">About</a></li>
+                             <li><a href="contact.html">Contact Us</a></li>
+                         </ul>
+                         <label id="bars">
+                             <i class="fas fa-bars"></i>
+                         </label>
+                     </nav>
+                     <div class="clearfix"></div>
+                 </header>
+            </section>
+        <main>
+            <div class="container">
+                <div class="form">
+                    <label id="commas">
+                        <i class="fa fa-quote-left" aria-hidden="true" style="color:#e23c52;"></i>
+                    </label>
+                    <h2 style="color: white; font-size: 30px;">Huge chances can occur <br>when you are<br> responsible in it <br>
+                        Just a penny can change another life .</h1>
+                    <label id="commasr">
+                        <i class="fa fa-quote-right" aria-hidden="true" style="color:#e23c52;"></i>
+                    </label>
+                    <form class="payment"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_I85YUCq6PLLGWB" async> </script> </form>                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Copyright -->
+            <div class="foot" >
+                © 2021 Copyright - Created by <strong style="color: yellow; font-size: 20px;">KOYYA SAKETH VENKATA SAI</strong> : 
+                <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/" target="_blank" style="color:rgb(255, 255, 255);"> The Sparks
+                    Foundation </a>
+            <!-- Copyright -->
+        </footer>
+
+       
+    </body>
+
+        
+
+</html>

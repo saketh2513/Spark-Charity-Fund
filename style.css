@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:20');
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+body{ 
+    font-family:'Poppins',sans-serif ;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/back3.jpeg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background:rgba(0,0,0,0.4) ;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+}
+
+/* .logo{
+    width: 20%;
+    padding-top: 2vh;
+} */
+header .logotext{
+    color: #e23c52;
+    height: 50px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 600; 
+}
+
+.clearfix{
+    clear: both;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav  li {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 60px;
+}
+nav a{ /* for navigation */
+    font-size: 18px;
+    color: white;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+nav a.active,
+nav a:hover{
+    border: 1px solid pink; 
+    background: #e23c52;
+    color: white;
+    transition: 0.5s;
+}
+nav #bars{
+    color: #e23c52;
+    font-size: 30px;
+    line-height: 60px;
+    float: right;
+    margin-right: 40px ;
+    cursor:pointer ;
+    display: none;
+}
+@media (max-width:1048px){
+    label.bars{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size:17px; 
+    }
+}
+@media (max-width:909px){
+    nav #bars{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0 ;
+        line-height: 30px;  
+    }
+    nav a{
+        font-size: 20px;
+    }
+    nav a.active,nav a:hover{
+        border: none;
+        color:white;
+        background: #e23c52;
+    }
+    nav ul.show{
+        left: 0;
+    }
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+form #commas {
+    color: #e23c52;
+    font-size: 30px;
+    float: left;  
+}
+form #commasr {
+    color: #e23c52;
+    font-size: 30px;
+    float: left; 
+    margin-left:450px; ; 
+}
+h2::first-letter{
+    color: #e23c52;
+}
+/* .container{
+	height: 350px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	padding: 50px;
+	background: rgba(255,255,255,.05);
+	border-top: 1px solid rgba(255,255,255,.05) ;
+	border-left:1px solid rgba(255,255,255,.05);
+	border-radius: 20px;
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+	position: relative;
+
+} */
+form h2{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+form h3{
+    color: white;
+}
+form button{
+    margin-top: 5px;
+    margin-left: 150px;
+    border: none;
+    background: #e23c52 ;
+    color: white;
+    padding: 10px 0;
+    width: 30%;
+    font-size: 20px;
+    font-family:rush Script MT, Brush Script Std, cursive;
+    font-weight: 900;
+    cursor: pointer;
+    border: 1px solid rgb(240, 25, 61);
+    border-radius: 100px ;
+    transition: 1.5s;
+}
+form button:hover{
+    box-shadow: 0 5px 50px 0 orangered inset,
+    0 5px 50px 0 orangered inset,
+    0 5px 50px 0 orange ;
+}
+footer{
+    margin-top: 5vh;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+footer a{
+    color: white;
+}
+  
